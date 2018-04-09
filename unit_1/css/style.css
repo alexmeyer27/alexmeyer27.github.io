@@ -1,8 +1,9 @@
 body {
-	background-color: green;
+	background-color: grey;
+	font-family: papyrus
 }
 
 h1, p {
-	color: red;
+	color: green;
 }
 
