@@ -1,9 +1,16 @@
 body {
-	background-color: grey;
-	font-family: papyrus
+	background-color: #80DCFF;
+	font-family: Arial, san-serif;
 }
 
 h1, p {
-	color: green;
+	color: #000000;
+}
+
+h1 {
+	font-size: 48px;
+	text-align: center;
+	text-decoration: underline;
+	text-transform: uppercase;
 }
 
