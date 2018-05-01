@@ -89,8 +89,7 @@ nav ul {
 	text-decoration: none;
 	margin: 0px;
 	letter-spacing: 2px;
-	padding-left: 2em;
-	padding-right: 2em;
+	padding: 0px 2em;	
 }
 
 nav li {
@@ -109,13 +108,8 @@ nav a {
 	border-width: 3px;
 }
 
-.explore{
-	padding: 0px;
-	margin: 0px;
-}
-
-.quick_create{
-
+.modules {
+	display: inline-block;
 }
 
 /*#logo {
@@ -140,6 +134,15 @@ nav a {
 	font-weight: 700;
 }
 
-#explore {
+#explore_tag {
 	text-align: center;
+}
+
+#explore{
+	padding: 0px;
+	margin: 0px;
+}
+
+#quick_create{
+
 }
