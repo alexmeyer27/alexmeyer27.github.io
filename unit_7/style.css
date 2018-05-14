@@ -16,12 +16,6 @@ body {
 
 }
 
-div, section {
-	background-color: #FFE2B8;
-	border: 1px black solid;
-	padding: 20px;
-}
-
 a {
 	font-size: inherit;
 	text-decoration: none;
@@ -67,17 +61,20 @@ button {
 	font-size: 20px;
 }
 
-aside {
-	background-color: #FFC675;
-	border: 1px black solid;
-	padding: 20px;
+header {
+	width: auto;	
 }
 
-header {
-	width: auto;
-	background-color: #FFED74;
-	border: 1px black solid;
-	padding: 20px;	
+footer {
+	background-color: #a8a8a8;
+	max-width: 100%;
+	border-width: 1px;	
+	border-style: solid;
+	text-align: left;
+}
+
+footer p {
+	width: 10em;
 }
 
 nav a {
@@ -91,27 +88,13 @@ nav a {
 
 nav {
 	text-align: center;
-	background-color: #E8C66A;
-	border: 1px black solid;
-	padding: 20px;
+	background-color: #a8a8a8;
 	width: 100%;
 }
 
 nav a:hover {
 	background-color: #dd0000;
 	padding: 20px 0;
-}
-
-footer {
-	background-color: #FF957E;
-	max-width: 100%;
-	border: 1px black solid
-	padding: 20px;
-	text-align: left;
-}
-
-footer p {
-	width: 10em;
 }
 
 .clearfix:after {
@@ -132,11 +115,8 @@ footer p {
 	text-align: center;
 }
 
-.modules {
-	width: auto;
-	height: 400px;
-	padding: 0px;
-	margin: 0px;
+.description p {
+	margin: auto;
 }
 
 #explore{
@@ -186,6 +166,13 @@ footer p {
 #quick_create_header {
 	width: 600px;
 	text-align: center;
+}
+
+.modules {
+	width: auto;
+	height: 400px;
+	padding: 0px;
+	margin: 0px;
 }
 
 #copyright {
