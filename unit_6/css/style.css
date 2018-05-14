@@ -53,9 +53,10 @@ h3 {
 }
 
 p {
-	width: 30em;
+	max-width: 30em;
 	line-height: 1.5em;
 	font-family: 'Cabin', san-serif;
+	text-align: center;
 }
 
 button {
@@ -94,7 +95,7 @@ nav {
 	background-color: #E8C66A;
 	border: 1px black solid;
 	padding: 20px;
-	width: 100%;
+	max-width: 100%;
 }
 
 nav a:hover {
@@ -105,13 +106,13 @@ nav a:hover {
 footer {
 	background-color: #FF957E;
 	max-width: 100%;
-	border: 1px black solid
+	border: 1px black solid;
 	padding: 20px;
 	text-align: left;
 }
 
 footer p {
-	width: 10em;
+	max-width: 10em;
 }
 
 .clearfix:after {
@@ -124,8 +125,8 @@ footer p {
 }
 
 .description {
-	margin: auto;
-	padding: 5px;
+	/*margin: auto;*/
+	/*padding: 5px;*/
 	border-style: solid;
 	border-color: #FEFEFA;
 	border-width: 3px;
@@ -133,22 +134,22 @@ footer p {
 }
 
 .modules {
-	width: auto;
-	height: 400px;
+	max-width: auto;
 	padding: 0px;
 	margin: 0px;
 }
 
 #explore{
 	float: right;
-	width: 600px;
+	max-width: 50%;
 	display: inline;
 }
 
 #quick_create {
 	float: left;
+	text-align: center;
 	display: inline;
-	width: 600px;
+	max-width: 50%;
 }
 
 /*#logo {
@@ -184,7 +185,7 @@ footer p {
 }
 
 #quick_create_header {
-	width: 600px;
+	max-width: 600px;
 	text-align: center;
 }
 
@@ -193,4 +194,9 @@ footer p {
 	text-align: right;
 	padding: 0px;
 	margin: 0px;
+}
+
+#hook {
+	text-align: center;
+	margin: auto;
 }
