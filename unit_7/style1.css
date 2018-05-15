@@ -88,7 +88,6 @@ nav a {
 	float: left;
 	text-transform: lowercase;
 	padding: 20px 0;
-	margin: 0 10px;
 }
 
 nav {
@@ -148,7 +147,7 @@ footer p {
 
 #right {
 	float: right;
-	max-width: 60%;
+	max-width: 50%;
 	display: inline;
 	background-color: #E55B88;
 	border: 1px black solid;
@@ -159,7 +158,7 @@ footer p {
 	float: left;
 	text-align: center;
 	display: inline;
-	max-width: 40%;
+	max-width: 50%;
 	background-color: #E582A2;
 	border: 1px black solid;
 	padding: 20px;
