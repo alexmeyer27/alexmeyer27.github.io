@@ -94,8 +94,8 @@ nav a {
 nav {
 	text-align: center;
 	background-color: #E8C66A;
-	border: 1px black solid;
-	padding: 20px;
+	border: .1em black solid;
+	padding: 1em;
 	max-width: 100%;
 }
 
@@ -184,7 +184,7 @@ footer p {
 
 
 #slogan {
-	font-size: 48px;
+	font-size: 2.4em;
 	padding: 10px;
 	text-decoration: underline;
 	text-align: center;
