@@ -3,7 +3,7 @@
 
 * {
 	padding: 0px;
-	margin: 20px;
+	margin: 0px;
 	box-sizing: border-box;
 }
 
@@ -17,17 +17,13 @@ body {
 }
 
 div, section {
-	background-color: #FFE2B8;
-	border: 1px black solid;
-	padding: 20px;
+	padding: 2em;
 }
 
 a {
 	font-size: inherit;
 	text-decoration: none;
 	color: inherit;
-	margin: 0px;
-	padding: 0px;
 }
 
 ul {
@@ -36,7 +32,7 @@ ul {
 
 h1, h2, h3 {
 	font-family: 'PT Sans', san-serif;
-	letter-spacing: 1.5px;
+	letter-spacing: .075em;
 }
 
 h1 {
@@ -61,24 +57,19 @@ p {
 
 button {
 	background-color: #72E875;
-	margin: 10px;
-	padding: 10px;
+	margin: .5em;
+	padding: .5em;
 	color: #FEFEFA;
 	text-align: center;
-	font-size: 20px;
+	font-size: 1em;
 }
 
 aside {
-	background-color: #FFC675;
-	border: 1px black solid;
-	padding: 20px;
+	padding: 1em;
 }
 
 header {
 	width: auto;
-	background-color: #FFED74;
-	border: 1px black solid;
-	padding: 20px;	
 }
 
 nav a {
@@ -87,14 +78,15 @@ nav a {
 	width: 18%;
 	float: left;
 	text-transform: lowercase;
-	padding: 20px 0;
+	padding: 1em 0;
+	margin: 0 .5em;
 }
 
 nav {
 	text-align: center;
-	background-color: #E8C66A;
-	border: 1px black solid;
-	padding: 20px;
+	/*background-color: #a8a8a8;*/
+	border: .1em black solid;
+	padding: 1em;
 	max-width: 100%;
 }
 
@@ -103,16 +95,32 @@ nav a:hover {
 	padding: 20px 0;
 }
 
+label{
+	letter-spacing: 2px;
+	display: block;
+	width: 18%;
+	float: left;
+	text-transform: lowercase;
+	padding: 20px 0;
+	margin: 0 10px;
+	display: none;
+}
+
 footer {
-	background-color: #FF957E;
-	max-width: 100%;
+	background-color: #a8a8a8;
+	width: inherit;
 	border: 1px black solid;
-	padding: 20px;
+	padding: 20px 50px;
+	float: left;
 	text-align: left;
 }
 
-footer p {
+footer > p {
 	max-width: 10em;
+}
+
+.wrapper {
+	width: 100%;
 }
 
 .clearfix:after {
@@ -124,10 +132,16 @@ footer p {
 	visibility: hidden;
 }
 
+.call_to_action{
+	background: url(../images/blur_bar_homepage.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 90vh;
+	padding-top: 5em;
+}
+
 .two_column {
-	background-color: #FFB7CF;
-	border: 1px black solid;
-	padding: 20px;
+	/*padding: 20px;*/
 }
 
 .description {
@@ -145,13 +159,17 @@ footer p {
 	margin: 0px;
 }
 
+#toggle {
+	display: none;
+
+}
+
 #right {
-	float: right;
+	float: left;
 	max-width: 50%;
 	display: inline;
-	background-color: #E55B88;
-	border: 1px black solid;
-	padding: 20px;
+/*	background-color: #E55B88;
+*/	
 }
 
 #left {
@@ -159,32 +177,17 @@ footer p {
 	text-align: center;
 	display: inline;
 	max-width: 50%;
-	background-color: #E582A2;
-	border: 1px black solid;
-	padding: 20px;
 }
+
 
 /*#logo {
 	text-align: right;
 }*/
 
-#wrapper {
-	width: 1500px;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-#homepageImage {
-	opacity: .75;
-	max-width: 85%;
-	height: auto;
-	margin: 2em auto;
-}
-
 
 #slogan {
-	font-size: 48px;
-	padding: 10px;
+	font-size: 2.4em;
+	padding: .5em;
 	text-decoration: underline;
 	text-align: center;
 	letter-spacing: 2.5px;
@@ -211,4 +214,17 @@ footer p {
 #hook {
 	text-align: center;
 	margin: auto;
+}
+
+@media screen and (max-width: 1130px) {
+	nav{
+		display: none;
+	}
+	label {
+		display: block;
+		margin: auto;
+	}
+	#toggle:checked + nav{
+		display: block;
+	}
 }
