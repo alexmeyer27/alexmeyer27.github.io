@@ -3,6 +3,7 @@
 	<head>
 		<title>socHQ</title>
 		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<!--[if lt IE 9]>
             <script src="bower_components/html5shiv/dist/html5shiv.js"></script>
         <![endif]-->
@@ -28,41 +29,44 @@
 			<div class= "description">
 				<h2>Why EventText?</h2>
 				<p id="hook">Compress your busy social life into one calendar. socHQ is your gateway to event planning from drinks to dinner parties to concerts and more! Simply import your phone contacts, create an event then text your invites to all your friends.</p>
-				<br>
+			</div>
+			<div>
 				<h3 id="explore_tag">Or if you're looking for the hot spot, check out the <a href="#" id="explore_anchor">explore</a> section for some ideas!</h3>
 			</div>
-			<section class= "walkthrough">
-				<h2>How does this all work?</h2>
-				<ul>
-					<li>Import your contacts</li>
-					<li>Make your plan</li>
-					<li>Gather your group</li>
-					<li>Text some deets</li>
-					<li>Post some pics</li>
-				</ul>
-			</section>
 			<div class="next_steps clearfix">
-				<aside class = "clearfix" id="quick_create">
-					<h2 id= "quick_create_header">quick create</h2>
-					<form>
+				<section class= "walkthrough">
+					<h2>How does this all work?</h2>
+					<ul>
+						<li>Import your contacts</li>
+						<li>Make your plan</li>
+						<li>Gather your group</li>
+						<li>Text some deets</li>
+						<li>Post some pics</li>
+					</ul>
+				</section>
+				<section class = "clearfix" id="quick_plan">
+					<h2 id= "quick_plan_header">Quick Plan</h2>
+				<paragraph id="quick_plan_description"></paragraph>
+					<form id="quick_plan_form">
 						Who?<br>
  						<input type="text" name="invitees">
   						<br>
-  						What?<br>
-  						<input type="text" name="event_name">
   						Where?<br>
-  						<input type="text" name="location">
+  						<input type="text" name="event_name">
+  						<br>
   						When?<br>
+  						<input type="text" name="location">
+  						<br>
+  						Description<br>
   						<input type="text" name="time">
-  						Why?<br>
-  						<input type="text" name="description">
+  						<br>
 					</form>
-				</aside>
-				<aside class = "clearfix" id="explore">
-					<h2>explore</h2>
-					<p>Check back soon for your local deals!</p>
-				</aside>
+				</section>
 			</div>
+			<section class="clearfix" id="explore">
+				<h2>explore</h2>
+				<p>Check back soon for your local deals!</p>
+			</section>
 			<footer class="clearfix">
 				<a href="mailto:alexmeyer27@gmail.com">Contact me</a>
 				<p id="copyright">&copy; Alex Meyer: 2018</p>

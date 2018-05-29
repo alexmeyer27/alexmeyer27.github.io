@@ -56,7 +56,7 @@ p {
 }
 
 button {
-	background-color: #9EEFFF;
+	background-color: #C3E8BE;
 	margin: .5em;
 	padding: .5em;
 	text-align: center;
@@ -73,7 +73,7 @@ header {
 
 nav {
 	text-align: center;
-	background-color: #9EEFFF;
+	background-color: #C3E8BE;
 	border: .1em black solid;
 	max-width: 100%;
 }
@@ -106,7 +106,7 @@ label{
 }
 
 footer {
-	background-color: #9EEFFF;
+	background-color: #a8a8a8;
 	width: inherit;
 	border: 1px black solid;
 	padding: 20px 50px;
@@ -124,6 +124,12 @@ input {
 	text-align: center;
 	height: 2em;
 	margin: auto;
+}
+
+}
+
+input [name=description] {
+
 }
 
 .wrapper {
@@ -148,24 +154,22 @@ input {
 	color: #FEFEFA;
 }
 
-.description {
-	background-color: #1f1a1c;
-	color: #FEFEFA;
-	text-align: center;
-	padding: 7em;
-}
-
 .next_steps {
 	padding: 4em;
-	background-color: #1f1a1c;
-	color: #FEFEFA;
+	background-color: #C3E8BE;
+}
+
+.description {
+	background-color: #C3E8BE;
+	text-align: center;
+	padding: 4em;
 }
 
 .walkthrough{
 	float: left;
 	width: 50%;
 	display: inline-block;
-	/*background-color: #9EEFFF;*/
+	background-color: #9EEFFF;
 }
 
 #toggle {
@@ -179,7 +183,7 @@ input {
 
 
 
-#quick_plan {
+#quick_create {
 	float: left;
 	text-align: center;
 	display: inline-block;
@@ -212,19 +216,19 @@ input {
 
 #explore_tag {
 	text-align: center;
-	margin: 4em 0;
+	margin: 4em 0 0;
 }
 
-#quick_plan_header {
+#quick_create_header {
 	max-width: 600px;
-	margin: auto;
+	text-align: center;
 }
 
 #copyright {
 	float: right;
 	text-align: right;
-	padding: 0em;
-	margin: 0em;
+	padding: 0px;
+	margin: 0px;
 }
 
 #hook {
@@ -233,11 +237,8 @@ input {
 	/*padding: 1em 0 2em;*/
 }
 
-#quick_plan_form {
+#quick_create_form {
 	padding: 2em;
-	background-color: #9EEFFF;
-	color: #1f1a1c;
-	border: solid black .1em;
 }
 
 
