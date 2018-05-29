@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans');
+@import url('https://fonts.googleapis.com/css?family=Cabin|PT+Sans');
+
+* {
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #FEFEFA;
+	font-family: 'Cabin', san-serif;
+	color: #1f1a1c;
+	text-align: center;
+	font-size: 20px;
+
+} 
+
+div, section {
+	/*padding: 2em;*/
+}
+
+a {
+	font-size: inherit;
+	text-decoration: none;
+	color: inherit;
+}
+
+ul {
+	list-style-type: none;
+}
+
+h1, h2, h3 {
+	font-family: 'PT Sans', san-serif;
+	letter-spacing: .075em;
+}
+
+h1 {
+	font-size: 3em;
+	text-transform: none;
+}
+
+h2 {
+	font-size: 2em;
+}
+
+h3 {
+	font-size: 1.25em;
+}
+
+p {
+	max-width: 30em;
+	line-height: 1.5em;
+	font-family: 'Cabin', san-serif;
+	text-align: center;
+}
+
+button {
+	background-color: #96DEE8;
+	margin: .5em;
+	padding: .5em;
+	text-align: center;
+	font-size: 1em;
+}
+
+aside {
+	padding: 1em;
+}
+
+header {
+	width: auto;
+}
+
+nav a {
+	letter-spacing: 2px;
+	display: block;
+	width: 18%;
+	float: left;
+	text-transform: lowercase;
+	padding: 1em 0;
+	margin: 0 .5em;
+}
+
+nav {
+	text-align: center;
+	background-color: #a8a8a8;
+	border: .1em black solid;
+	padding: 1em;
+	max-width: 100%;
+}
+
+nav a:hover {
+	background-color: #C3E8BE;
+	padding: 20px 0;
+}
+
+label{
+	letter-spacing: 2px;
+	display: block;
+	width: 18%;
+	float: left;
+	text-transform: lowercase;
+	padding: 20px 0;
+	margin: 0 10px;
+	display: none;
+}
+
+footer {
+	background-color: #a8a8a8;
+	width: inherit;
+	border: 1px black solid;
+	padding: 20px 50px;
+	float: left;
+	text-align: left;
+}
+
+footer > p {
+	max-width: 10em;
+}
+
+input {
+	width: 30em;
+	display: block;
+	text-align: center;
+	height: 2em;
+}
+
+input [type=text] {
+	margin: 3px 10px;
+}
+
+input [name=description] {
+
+}
+
+.wrapper {
+	width: 100%;
+}
+
+.clearfix:after {
+	display: block;
+	content: " ";
+	clear: both;
+	height: 0;
+	font-size: 0;
+	visibility: hidden;
+}
+
+.call_to_action{
+	background: url(../images/blur_bar_homepage.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 90vh;
+	padding-top: 5em;
+	color: #FEFEFA;
+}
+
+.next_steps {
+	padding: 0;
+}
+
+.description {
+	background-color: #C3E8BE;
+	text-align: center;
+	margin-top: 1em;
+}
+
+.modules {
+	max-width: auto;
+	padding: 0px;
+	margin: 0px;
+}
+
+#toggle {
+	display: none;
+
+}
+
+#explore_anchor{
+	text-decoration: underline;
+}
+
+#quick_create {
+	float: left;
+	text-align: center;
+	display: inline;
+	width: 50%;
+	background-color: #C3E8BE;
+	height: 100%;
+}
+
+#explore {
+	float: left;
+	width: 50%;
+	display: inline;
+	background-color: #96DEE8;
+	height: 100%;
+}
+
+
+/*#logo {
+	text-align: right;
+}*/
+
+
+#slogan {
+	font-size: 2.4em;
+	padding: .5em;
+	text-decoration: underline;
+	text-align: center;
+	letter-spacing: 2.5px;
+	font-family: 'PT Sans';
+	font-weight: 700;
+}
+
+#explore_tag {
+	text-align: center;
+}
+
+#quick_create_header {
+	max-width: 600px;
+	text-align: center;
+}
+
+#copyright {
+	float: right;
+	text-align: right;
+	padding: 0px;
+	margin: 0px;
+}
+
+#hook {
+	text-align: center;
+	margin: auto;
+}
+
+
+
+@media screen and (max-width: 1130px) {
+	nav{
+		display: none;
+	}
+	label {
+		display: block;
+		margin: auto;
+	}
+	#toggle:checked + nav{
+		display: block;
+	}
+}
