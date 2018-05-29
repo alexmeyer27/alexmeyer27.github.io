@@ -157,7 +157,7 @@ input [type=text] {
 	color: #FEFEFA;
 }
 
-.walkthrough{
+#walkthrough{
 	float: left;
 	width: 50%;
 	display: inline-block;
@@ -201,10 +201,8 @@ input [type=text] {
 	text-align: center;
 	display: inline-block;
 	width: 50%;
-	/*background-color: #C3E8BE;*/
 	height: 100%;
 }
-
 
 #slogan {
 	font-size: 2.4em;
@@ -214,6 +212,7 @@ input [type=text] {
 	letter-spacing: 2.5px;
 	font-family: 'PT Sans';
 	font-weight: 700;
+	padding-top: 6em;
 }
 
 #explore_header {
@@ -223,6 +222,7 @@ input [type=text] {
 #explore_tag {
 	text-align: center;
 	margin: 4em 0;
+	padding: 0 1em;
 }
 
 #quick_plan_header {
@@ -241,7 +241,7 @@ input [type=text] {
 #hook {
 	text-align: center;
 	margin: auto;
-	width: 30em;
+	max-width: 30em;
 }
 
 #quick_plan_form {
@@ -252,9 +252,15 @@ input [type=text] {
 }
 
 @media screen and (max-width: 1392px) {
-	.walkthrough > h2 {
-		width: 12em;
-		margin: auto;
+	#quick_plan_title, #quick_plan_header{
+		font-size: 1.6em;
+	}
+}
+
+@media screen and (max-width: 1201px) {
+	.next_steps, #walkthrough, #quick_plan {
+		float: none;
+		padding: 1em;
 	}
 }
 
@@ -277,15 +283,80 @@ input [type=text] {
 	#toggle:checked + #nav_action > a {
 		padding: 0 1em;
 	}
+}
 
-	.walkthrough {
-		float: left;
-		width: 50%;
-		display: inline-block;
-		padding: 0.6em 5em 0em 0em;
+@media screen and (max-width: 1080px) {
+	#toggle:checked + #nav_action > a {
+		padding: 0 1.5em;
 	}
 
-	.walkthrough > h2, li, p {
-		width: 1em;
+	#toggle:checked + nav a {
+		width: 30%;
+	}
+
+	#walkthrough {
+		display: none;
+	}
+
+	#quick_plan {
+		width: 100%;
+	}
+
+	#quick_plan_form > input {
+		width: 60%;
+	}
+}
+
+@media screen and (max-width: 700px) {
+	.call_to_action, .description, #explore_tag {
+		display: none;
+	}
+
+	#quick_plan_form {
+		width: 100%;
+	}
+
+	#quick_plan_form > input {
+		width: 85%;
+	}
+
+	.explore {
+	width: 100%;
+	display: inline-block;
+	margin: auto;
+	padding: 5em;
+}
+}
+	nav {
+		display: block;
+	}
+
+	nav > #logo {
+		display: none;
+	}
+
+	label {
+		display: none;
+	}
+
+	#nav_action {
+		width: 100%;
+		margin: auto;
+	}
+
+	#nav_action > a {
+		float: none;
+		width: 25%;
+		display: inline-block;
+		margin-right: 1em;
+	}
+
+@media screen and (max-width: 500px) {
+	body {
+		padding: 2em 0;
+	}
+
+	footer > a, p {
+		font-size: .8em;
 	}
 }
