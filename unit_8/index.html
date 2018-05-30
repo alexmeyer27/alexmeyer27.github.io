@@ -3,6 +3,7 @@
 	<head>
 		<title>socHQ</title>
 		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<!--[if lt IE 9]>
             <script src="bower_components/html5shiv/dist/html5shiv.js"></script>
         <![endif]-->
@@ -13,12 +14,14 @@
 				<label for="toggle">Menu</label>
 				<input type="checkbox" id="toggle">
 				<nav class="clearfix">
-					<a href="#">socHQ</a>
+					<a href="#" id="logo">socHQ</a>
 					<!-- <a href="#"><img src="#" alt="logo"></a> -->
-					<a href="#">Sign Up</a>
-					<a href="#">Sign In</a>
-					<a href="#">explore</a>
-					<a href="#">About Us</a>
+					<div id="nav_action">
+						<a href="#">Sign In</a>
+						<a href="#">Sign Up</a>
+						<a href="#">About Us</a>
+					<!-- <a href="#">explore</a> -->
+					</div>
 				</nav>
 			</header>
 			<section class="call_to_action">	
@@ -27,36 +30,50 @@
 			</section>
 			<div class= "description">
 				<h2>Why EventText?</h2>
+				<br>
 				<p id="hook">Compress your busy social life into one calendar. socHQ is your gateway to event planning from drinks to dinner parties to concerts and more! Simply import your phone contacts, create an event then text your invites to all your friends.</p>
-				<h3 id="explore_tag">Or if you're looking for the hot spot, check out the <a href="#">explore</a> section for some ideas!</h3>
 			</div>
-			<section class= "walkthrough">
-				<h2>How does this all work?</h2>
-				<ul>
-					<li>Import your contacts</li>
-					<li>Make your plan</li>
-					<li>Gather your group</li>
-					<li>Text some deets</li>
-					<li>Post some pics</li>
-				</ul>
+			<div>
+				<h3 id="explore_tag">Or if you're looking for the hot spot, check out the <a href="#" id="explore_anchor">explore</a> section for some ideas!</h3>
+			</div>
+			<div class="next_steps clearfix">
+				<section id= "walkthrough">
+					<h2 id="quick_plan_title">How does this all work?</h2>
+<!-- 					<br>
+ -->					<!-- <ul>
+						<li>Import your contacts</li>
+						<li>Make your plan</li>
+						<li>Gather your group</li>
+						<li>Text some deets</li>
+						<li>Post some pics</li>
+					</ul> -->
+					<br>
+					<p>Try it out with the Quick Plan feature! Add phone numbers of friends you want to invite, then have socHQ test your plan details to the group.</p>
+				</section>
+				<section class = "clearfix" id="quick_plan">
+					<form id="quick_plan_form">
+						<h2 id= "quick_plan_header">Quick Plan</h2>
+						<br>
+						Who?<br>
+ 						<input type="text" name="invitees">
+  						<br>
+  						Where?<br>
+  						<input type="text" name="event_name">
+  						<br>
+  						When?<br>
+  						<input type="text" name="location">
+  						<br>
+  						Description<br>
+  						<input type="text" name="description">
+  						<br>
+					</form>
+				</section>
+			</div>
+			<section class="clearfix explore">
+				<h2 id="explore_header">Explore</h2>
+				<br>
+				<p>Check back periodically for your local deals, events, happy hours and more!</p>
 			</section>
-			<div class="two_column clearfix">
-				<aside class = "clearfix" id="left">
-					<h2 id= "quick_create_header">quick create</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat.</p>
-				</aside>
-				<aside class = "clearfix" id="right">
-					<h2>explore</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-				</aside>
-			</div>
 			<footer class="clearfix">
 				<a href="mailto:alexmeyer27@gmail.com">Contact me</a>
 				<p id="copyright">&copy; Alex Meyer: 2018</p>
