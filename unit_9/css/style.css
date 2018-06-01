@@ -110,15 +110,15 @@ footer > p {
 }
 
 input {
-	width: 30em;
+	width: 60%;
 	display: block;
 	text-align: center;
 	height: 2em;
 	margin: auto;
 }
 
-input [type=text] {
-	height: 3em;
+#description{
+	width: 60%;
 }
 
 .wrapper {
@@ -156,12 +156,7 @@ input [type=text] {
 	color: #FEFEFA;
 }
 
-#walkthrough{
-	float: left;
-	width: 50%;
-	display: inline-block;
-	padding: 2.6em 6em 4em 1em;
-}
+
 
 .explore {
 	width: 100%;
@@ -193,6 +188,13 @@ input [type=text] {
 	text-decoration: underline;
 }
 
+#walkthrough{
+	float: left;
+	width: 50%;
+	display: inline-block;
+	padding: 2.6em 0;
+	margin: auto;
+}
 
 #quick_plan {
 	float: left;
@@ -200,6 +202,13 @@ input [type=text] {
 	display: inline-block;
 	width: 50%;
 	height: 100%;
+}
+
+#quick_plan_form {
+	padding: 2em;
+	background-color: #B8EFFF;
+	color: #1f1a1c;
+	border: solid #FEFEFA .3em;
 }
 
 #slogan {
@@ -223,6 +232,15 @@ input [type=text] {
 	padding: 0 1em;
 }
 
+#quick_plan_title {
+	margin: auto;
+}
+
+#quick_plan_description {
+	margin: auto;
+	padding: none;
+}
+
 #quick_plan_header {
 	max-width: 600px;
 	margin: auto;
@@ -242,16 +260,15 @@ input [type=text] {
 	max-width: 30em;
 }
 
-#quick_plan_form {
-	padding: 2em;
-	background-color: #B8EFFF;
-	color: #1f1a1c;
-	border: solid #FEFEFA .3em;
-}
+
 
 @media screen and (max-width: 1392px) {
 	#quick_plan_title, #quick_plan_header{
 		font-size: 1.6em;
+	}
+
+	#quick_plan_description {
+		padding-right: 1em;
 	}
 }
 
@@ -315,9 +332,9 @@ input [type=text] {
 		width: 100%;
 	}
 
-	#quick_plan_form > input {
+/*	#quick_plan_form > input {
 		width: 85%;
-	}
+	}*/
 
 	.explore {
 	width: 100%;
