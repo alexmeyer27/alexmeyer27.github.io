@@ -117,10 +117,6 @@ input {
 	margin: auto;
 }
 
-#description{
-	width: 60%;
-}
-
 .wrapper {
 	width: 100%;
 }
@@ -134,74 +130,30 @@ input {
 	visibility: hidden;
 }
 
-.call_to_action{
-	background: url(../images/blur_bar_homepage.jpg);
-	background-size: cover;
-	background-repeat: no-repeat;
-	height: 90vh;
-	padding-top: 5em;
-	color: #FEFEFA;
-}
-
-.description {
-	background-color: #1f1a1c;
-	color: #FEFEFA;
-	text-align: center;
-	padding: 7em;
-}
-
 .next_steps {
 	padding: 4em;
 	background-color: #1f1a1c;
 	color: #FEFEFA;
-}
-
-
-
-.explore {
-	width: 100%;
-	display: inline-block;
 	margin: auto;
-	padding: 7em;
-}
-
-.explore > p {
-	margin:auto;
 }
 
 #toggle {
 	display: none;
 }
 
-#nav_action {
-	float: right;
-	width: 60%;
-}
-
-#nav_action > a {
-    max-width: 33%;
-    display: block;
-    float: right;
-}
 
 #explore_anchor{
 	text-decoration: underline;
 }
 
-#walkthrough{
-	float: left;
-	width: 50%;
-	display: inline-block;
-	padding: 2.6em 0;
-	margin: auto;
-}
 
 #quick_plan {
 	float: left;
 	text-align: center;
-	display: inline-block;
-	width: 50%;
+/*	display: inline-block;
+*/	width: 50%;
 	height: 100%;
+	margin: auto;
 }
 
 #quick_plan_form {
@@ -211,56 +163,18 @@ input {
 	border: solid #FEFEFA .3em;
 }
 
-#slogan {
-	font-size: 2.4em;
-	padding: .5em;
-	text-decoration: underline;
-	text-align: center;
-	letter-spacing: 2.5px;
-	font-family: 'PT Sans';
-	font-weight: 700;
-	padding-top: 6em;
-}
-
-#explore_header {
-	padding: 0em;
-}
-
 #explore_tag {
 	text-align: center;
 	margin: 4em 0;
 	padding: 0 1em;
 }
 
-#quick_plan_title {
-	margin: auto;
-}
-
-#quick_plan_description {
-	margin: auto;
-	padding: none;
-}
 
 #quick_plan_header {
 	max-width: 600px;
 	margin: auto;
 	color: #1f1a1c;
 }
-
-#copyright {
-	float: right;
-	text-align: right;
-	padding: 0em;
-	margin: 0em;
-}
-
-#hook {
-	text-align: center;
-	margin: auto;
-	max-width: 30em;
-}
-
-
 
 @media screen and (max-width: 1392px) {
 	#quick_plan_title, #quick_plan_header{
